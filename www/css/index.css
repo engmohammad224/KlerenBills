@@ -100,6 +100,8 @@ h1 {
 }*/
 
 
+
+
 .trash {
     color: rgb(209, 91, 71);
 }
@@ -328,3 +330,19 @@ h1 {
 }
 /* For this demo we used images with a size of 310x310 pixels. Just before the second breakpoint the images reach their max width: 1019px - 2 x 9px padding = 1001px x 30.9333% = ~310px */
 /*End Of List */
+
+
+/*«·“»Ê‰*/
+
+
+.ui-field-contain {
+    margin-bottom: 20px;
+    border-bottom: 0;
+}
+
+    .ui-field-contain label {
+        margin-left: 100px;
+        font-family: Arial;
+        font-size: 18px;
+    }
+

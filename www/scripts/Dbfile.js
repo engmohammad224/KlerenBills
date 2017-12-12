@@ -284,8 +284,6 @@
                 if (resultSet.rows.length) {
                     callBack(true);
 
-                    callBack(true);
-
                 }
                 else
                     callBack(false);

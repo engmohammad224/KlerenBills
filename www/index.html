@@ -50,6 +50,35 @@
     <title>KlerenBills</title>
 </head>
 <body>
+
+    <!-- إنشاء زبون  -->
+    <div id="customerPage" data-theme="a" data-role="page">
+
+        <div data-role="header" data-position="fixed">
+            <h2> زبون جديد  </h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <input type="text" id="cName"  placeholder="الإسم">
+            <br />
+            <input type="text" id="cPhone" placeholder="رقم الهاتف">
+            <br />
+
+            <input type="text" id="cAddress" placeholder="العنوان">
+            <br />
+
+            <input type="text" id="cEmail" placeholder="الإيميل">
+            <br />
+            <a id="cButtonSave" class="ui-btn ui-icon-plus ui-btn-icon-left ui-shadow ui-btn-b">حفظ</a>
+            <br />
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <h3>Footer</h3>
+        </div>
+
+    </div>
     <!-- Databse Page -->
     <div id="DbPage" data-theme="b" data-role="page">
 
@@ -59,12 +88,23 @@
 
         <div data-role="main" class="ui-content">
 
+            <a id="testPromise" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a  ui-btn-icon-left ui-btn-inline">
+                test Promise
+            </a>
             <a id="OpenDatabaseBtn" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a  ui-btn-icon-left ui-btn-inline">
                 Open Database
             </a>
-            <br />
+            <a id="InsertData" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a  ui-btn-icon-left ui-btn-inline">
+                InsertData
+            </a>
+
+            <a id="GetData" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a  ui-btn-icon-left ui-btn-inline">
+                GetData
+            </a>
+
+
             <!-- The List -->
-            <ul id="AllUsersBill" data-role="listview" data-inset="true">
+            <!--<ul id="AllUsersBill" data-role="listview" data-inset="true">
                 <li>
                     <a href="#">
                         <img src="images/apple.png" class="ui-li-thumb">
@@ -128,13 +168,20 @@
                         <p class="ui-li-aside">Symbian</p>
                     </a>
                 </li>
-            </ul>
+            </ul>-->
+
+
+            <ul id="AllUsersBill" data-role="listview" data-inset="true"></ul>
+
         </div>
 
         <div data-role="footer" data-position="fixed">
             <h3>Footer</h3>
         </div>
     </div>
+
+
+
 
 
     <div id="MainPage" data-role="page">
@@ -227,6 +274,8 @@
     </div>
 
     <script src="scripts/Dbfile.js"></script>
+    <script src="scripts/loadEvents.js"></script>
+    <script src="scripts/DatabaseOperations.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
